@@ -13,19 +13,19 @@
     <title>Sitio Web Profesional</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="banner-wrapper">
+    <div id="wrapper">
+        <div id="banner-wrapper">
             <header>
                 <div class="header-inner">
                     <a href="index.html" id="logo">
-                        <img src="img/pics/d_logo_2.jpg" alt="mi logo">
+                        <img src="img/pics/d_logo_2.png" alt="mi logo">
                     </a>
                     <nav>
-                        <a href="#" id="menu-ico">
+                        <a href="#" id="menu-icon">
                             <i class="fa fa-bars"></i>
                         </a>
                         <ul>
-                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="index.html" class="current">Inicio</a></li>
                             <li><a href="#skills">Habilidades</a></li>
                             <li><a href="#portfolio">Portafolio</a></li>
                             <li><a href="#services">Servicios</a></li>
@@ -36,10 +36,10 @@
             </header>
             <section class="slide-wrap">
                 <ul class="slider1">
-                <li><img src="img/slider/image1.jpg" alt="imagen1"></li>
-                <li><img src="img/slider/image2.jpg" alt="imagen2"></li>
-                <li><img src="img/slider/image3.png" alt="imagen3"></li>
-                <li><img src="img/slider/image4.jpg" alt="imagen3"></li>
+                <li><img src="img/slider/image1.jpg" alt="imagen1" title="París el país del amor y la pasión."></li>
+                <li><img src="img/slider/image2.jpg" alt="imagen2" title="Brasil el cristo del Corcobado."></li>
+                <li><img src="img/slider/image3.png" alt="imagen3" title="Las Galapagos, la isla más preciosas del mundo."></li>
+                <li><img src="img/slider/image4.jpg" alt="imagen3" title="El Retito, parque emblemático de Madrid - España"></li>
                 </ul>
             </section>
         </div>
@@ -86,15 +86,30 @@
                     Aperiam vero cumque enim!
                 </p>
         </section>
+        <div class="clearfix-padding"></div>
+    <!--PORTFOLIO -->
+    <section class="left-col" id="portfolio">
+        <h3>Portafolio</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+    <section class="sidebar">
+        <img class="img-sidebar" src="img/pics/d_logo_2.png">
+    </section>
+    <div class="clearfix-padding"></div>
     <!-- Servicios -->
     <div id="services" class="one-third-padding">
         <h3>Nuestros Servicios 01</h3>
-        <img src="img/pics/image1.jpg" alt="">
+        <img src="img/pics/image1.png" alt="">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, recusandae.</p>
     </div>
     <div id="services" class="one-third-padding">
             <h3>Nuestros Servicios 02</h3>
-            <img src="img/pics/image2.jpg" alt="">
+            <img src="img/pics/image2.png" alt="">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, recusandae.</p>
     </div>
     <div id="services" class="one-third-padding">
@@ -104,7 +119,7 @@
     </div>
     <div id="services" class="one-third-padding">
             <h3>Nuestros Servicios 04</h3>
-            <img src="img/pics/image4.jpg" alt="">
+            <img src="img/pics/image4.png" alt="">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, recusandae.</p>
     </div>
     <!-- Footer -->
@@ -112,7 +127,7 @@
         <div class="banner-wrapper">
             <div class="icon-text">
                 <div class="icon-text-icon">
-                    <ul>
+                    <ul class="footer-nav">
                         <li><a href="index.html">
                             Inicio
                         </a></li>
@@ -131,7 +146,7 @@
                     </ul>
                 </div>
                 <div class="icon-text-text">
-                    <ul>
+                    <ul class="social">
                         <li>
                             <a href="mailto:contact@miweb.com" target="_blank">
                                 <i class="fa fa-envelope-o"></i>
@@ -162,7 +177,7 @@
             </div>
         </div>
     </footer>
-    <footer>
+    <footer class="second-footer">
         <p>
             &copy; <a href="www.misitioweb.com" target="_blank">Todos los derechos reservados</a>
         </p>
@@ -171,14 +186,14 @@
     <script>
         $(document).ready(function(){
             $('.slider1').bxSlider({
-                mode: 'fade'
+                auto: true,
+                autoControls: true,
+                stopAutoOnClick: true,
+                pager: true,
+                //slideWidth: 1200,
+                captions: true,
             })
-            $('.slider2').bxSlider({
-                mode: 'fade'
-            })
-            $('.slider3').bxSlider({
-                mode: 'fade'
-            })
+            
         })
     </script>
 
